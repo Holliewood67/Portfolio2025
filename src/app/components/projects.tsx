@@ -1,4 +1,6 @@
-
+'use client'
+ import { useInView } from "react-intersection-observer";
+ 
 export default function Projects(){
     const projects =[
         {
@@ -16,9 +18,14 @@ export default function Projects(){
             image:"/images/mmsitepic.png"
         },
     ]
+
+    const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3, // Adjust how much of the section should be visible before triggering
+  });
     return(
         <section id="projects" className="py-12 px-4 bg-gray-400/25 text-white w-full">
-            <div className="max-w-6xl mx-auto">
+            <div ref={ref} className={inView ? 'slide-top max-w-6xl mx-auto' : 'max-w-6xl mx-auto opacity-0'}>
                 <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, id) => (
