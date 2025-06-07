@@ -1,5 +1,6 @@
 'use client'
  import { useInView } from "react-intersection-observer";
+ import Image from "next/image";
  
 export default function Projects(){
     const projects =[
@@ -30,7 +31,7 @@ export default function Projects(){
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, id) => (
                         <div key={id} className="bg-gray-400/25 hover:bg-gray-500/50 rounded-xl overflow-hidden shadow-black shadow-lg hover:shadow-2xl transition-shadow duration-360">
-                            <img src={project.image} alt={project.title} className="w-full h-28 object-cover" />
+                            <Image src={project.image} alt={project.title} className="w-full h-28 object-cover" />
                             <div className="p-6">
                                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
