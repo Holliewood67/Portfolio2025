@@ -15,7 +15,7 @@ export default function AboutMe(){
                     About Me
                 </h2>
                 <p className="max-w-4xl text-xl md:text-2xl mb-12">
-                    I'm Ethan Cantrell — a self-taught web developer, musician, and creative based in Tulsa, Oklahoma. I build clean, responsive websites using modern tools like Next.js, Tailwind CSS, and MongoDB.
+                    I&apos;m Ethan Cantrell — a self-taught web developer, musician, and creative based in Tulsa, Oklahoma. I build clean, responsive websites using modern tools like Next.js, Tailwind CSS, and MongoDB.
 
                     Outside of coding, I run Musical Monsters, a DIY artist collective that hosts shows, open mics, and records local talent. I bring that same love of storytelling and design into the sites I build — whether it’s a portfolio, small business page, or creative project.
 
