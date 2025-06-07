@@ -9,7 +9,7 @@ export default function AboutMe(){
   });
 
     return(
-        <section id="aboutMe" className="h-screen flex flex-col w-full items-center text-center justify-center bg-black text-gray-300 px-4 py-12 ">
+        <section id="aboutMe" className="min-h-screen flex flex-col w-full items-center text-center justify-center bg-black text-gray-300 px-4 py-12 ">
             <div ref={ref} className={inView ? 'slide-top' : 'opacity-0'}>
                 <h2 className="text-4xl font-bold mt-12 mb-12">
                     About Me
