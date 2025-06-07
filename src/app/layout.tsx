@@ -24,7 +24,7 @@ export const metadata = {
   
     images: [
       {
-        url: 'https://www.ethancantrell.com/portfolio.png', // Must be an absolute URL
+        url: 'https://www.ethancantrell.com/images/portfolio.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
