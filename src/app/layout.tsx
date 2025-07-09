@@ -21,7 +21,6 @@ export const metadata = {
   openGraph: {
     title: "Ethan Cantrell- Developer",
     description: "Portfolio of Ethan Cantrell — clean code, creative projects, and community-driven events.",
-  
     images: [
       {
         url: 'https://www.ethancantrell.com/images/portfolio.png', // Must be an absolute URL

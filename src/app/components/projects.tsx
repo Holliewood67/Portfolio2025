@@ -9,14 +9,14 @@ export default function Projects(){
             description: "This is the website that you currently looking at now, which is my web development portfolio.",
             siteLink: "",
             gitHub: "https://github.com/Holliewood67/Portfolio2025",
-            image:"/images/portfolio.png"
+            image:"/images/portfolio.jpg"
         },
         {
             title: "Musical Monsters Hub",
             description: "A live booking and EPK site built with Next.js and Tailwind.",
             siteLink: "https://www.MusicalMonstersTulsa.com",
             gitHub: "https://github.com/Holliewood67/musical-monsters",
-            image:"/images/mmsitepic.png"
+            image:"/images/mmsitepic.jpg"
         },
     ]
 
@@ -31,7 +31,7 @@ export default function Projects(){
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, id) => (
                         <div key={id} className="bg-gray-400/25 hover:bg-gray-500/50 rounded-xl overflow-hidden shadow-black shadow-lg hover:shadow-2xl transition-shadow duration-360">
-                            <Image src={project.image} alt={project.title} className="w-full h-28 object-cover" />
+                            <Image src={project.image} alt={project.title} width={600} height={400} className="object-cover" />
                             <div className="p-6">
                                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
