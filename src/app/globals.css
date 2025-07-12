@@ -57,3 +57,39 @@ body {
             opacity: 100;
   }
 }
+
+/* Optional: Hacker-style glow & scanline effect */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.7; }
+  55% { opacity: 0.9; }
+}
+
+.neon-glow {
+  text-shadow: 0 0 3px #33ff00, 0 0 5px #33ff00;
+  animation: flicker 3s infinite;
+}
+
+@keyframes hero-button-glow {
+  0%{
+    background: #000;
+    text-shadow: none;
+  } 
+  100%{
+    background: hsl(150, 100%, 20%); 
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+  }
+}
+
+.hero-button:hover {
+  animation: hero-button-glow 1s ease-in-out 1;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+
+
+/* .terminal-text {
+  animation: flicker 5s infinite;
+  text-shadow: 0 0 2px #33ff00;
+} */
