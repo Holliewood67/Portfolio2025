@@ -58,16 +58,14 @@ body {
   }
 }
 
-/* Optional: Hacker-style glow & scanline effect */
 @keyframes flicker {
   0%, 100% { opacity: 1; }
-  45% { opacity: 0.7; }
-  55% { opacity: 0.9; }
+  50% { opacity: 0.8; }
 }
 
 .neon-glow {
-  text-shadow: 0 0 3px #33ff00, 0 0 5px #33ff00;
-  animation: flicker 3s infinite;
+  text-shadow: 0 0 3px #33ff00;
+  animation: flicker 2s infinite;
 }
 
 @keyframes hero-button-glow {
@@ -76,13 +74,13 @@ body {
     text-shadow: none;
   } 
   100%{
-    background: hsl(150, 100%, 20%); 
+    background: rgba(22, 101, 52, 0.3); 
     text-shadow: 0 0 3px #000, 0 0 5px #000;
   }
 }
 
 .hero-button:hover {
-  animation: hero-button-glow 1s ease-in-out 1;
+  animation: hero-button-glow 0.5s ease-in-out 1;
   animation-fill-mode: both;
   animation-play-state: running;
 }

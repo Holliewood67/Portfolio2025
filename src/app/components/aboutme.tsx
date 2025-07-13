@@ -10,12 +10,12 @@ export default function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="min-h-screen w-full flex flex-col items-center justify-center text-center bg-black text-green-400 px-4 py-16 font-mono"
+      className="min-h-screen w-full flex flex-col items-center justify-center text-center text-green-400 border-y-4 px-4 py-16 font-mono"
     >
       <div ref={ref} className={inView ? 'slide-top' : 'opacity-0'}>
         <h2 className="text-4xl font-bold mb-8 tracking-widest neon-glow">ABOUT ME</h2>
         <p className="max-w-4xl text-lg md:text-xl leading-relaxed tracking-wide terminal-text">
-          I'm <span className="text-green-300 font-bold">Ethan Cantrell</span> — a self-taught web developer, musician,
+          I&apos;m <span className="text-green-300 font-bold">Ethan Cantrell</span> — a self-taught web developer, musician,
           and creative based in Tulsa, Oklahoma. I build clean, responsive websites using modern tools like
           <span className="text-green-300"> Next.js</span>, <span className="text-green-300">Tailwind CSS</span>, and
           <span className="text-green-300"> MongoDB</span>.<br /><br />
