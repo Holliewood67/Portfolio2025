@@ -10,9 +10,18 @@ export default function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="min-h-screen w-full flex flex-col items-center justify-center text-center text-green-400 border-y-4 px-4 py-16 font-mono"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center text-center text-green-400 border-y-4 px-4 py-16 font-mono"
     >
-      <div ref={ref} className={inView ? 'slide-top' : 'opacity-0'}>
+      <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-10 z-0"
+      >
+          <source src="/videos/about-bg.mp4" type="video/mp4" />
+      </video>
+      <div ref={ref} className={inView ? 'slide-top relative' : 'opacity-0'}>
         <h2 className="text-4xl font-bold mb-8 tracking-widest neon-glow">ABOUT ME</h2>
         <p className="max-w-4xl text-lg md:text-xl leading-relaxed tracking-wide terminal-text">
           I&apos;m <span className="text-green-300 font-bold">Ethan Cantrell</span> — a self-taught web developer, musician,

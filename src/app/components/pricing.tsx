@@ -13,14 +13,14 @@ export default function Pricing() {
       <div ref={ref} className={inView ? 'slide-top max-w-5xl mx-auto' : 'opacity-0 max-w-5xl mx-auto'}>
         <h2 className="text-4xl font-bold mb-12 text-center">Pricing</h2>
 
-        <div className="bg-green-800/30 rounded-xl p-6 mb-12 shadow-black shadow-lg">
+        <div className="bg-green-800/30  rounded-xl p-6 mb-12 shadow-green-400/30 shadow-lg">
           <h3 className="text-2xl font-semibold mb-4">Single-Page Website – $150</h3>
           <p className="text-green-300 text-lg">
             A clean, mobile-friendly site that includes your location, contact info, hours, social links, branding, and key photos. Built for fast loading and easy updates. Perfect for small businesses, artists, and local projects that need a web presence without the bloat.
           </p>
         </div>
 
-        <div className="bg-green-800/30 rounded-xl p-6 mb-12 shadow-black shadow-lg">
+        <div className="bg-green-800/30 rounded-xl p-6 mb-12 shadow-green-400/30 shadow-lg">
           <h3 className="text-2xl font-semibold mb-4">Add-Ons</h3>
           <ul className="text-green-300 text-lg list-disc list-inside space-y-3">
             <li><strong>Event Calendar Integration</strong> – +$50  
@@ -34,7 +34,7 @@ export default function Pricing() {
           </ul>
         </div>
 
-        <div className="bg-green-800/30 rounded-xl p-6 shadow-black shadow-lg">
+        <div className="bg-green-800/30 rounded-xl p-6 shadow-green-400/30 shadow-lg">
           <h3 className="text-2xl font-semibold mb-4 ">Ongoing Maintenance</h3>
           <p className="text-green-300 text-lg">
             Need help updating event flyers, hours, photos, or general upkeep?

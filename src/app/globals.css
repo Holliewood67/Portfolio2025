@@ -80,7 +80,7 @@ body {
 }
 
 .hero-button:hover {
-  animation: hero-button-glow 0.5s ease-in-out 1;
+  animation: hero-button-glow 0.3s ease-in-out 1;
   animation-fill-mode: both;
   animation-play-state: running;
 }
