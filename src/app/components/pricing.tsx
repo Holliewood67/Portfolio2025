@@ -9,8 +9,17 @@ export default function Pricing() {
   })
 
   return (
-    <section id="pricing" className="w-full py-16 px-4">
-      <div ref={ref} className={inView ? 'slide-top max-w-5xl mx-auto' : 'opacity-0 max-w-5xl mx-auto'}>
+    <section id="pricing" className="relative w-full py-16 px-4">
+      <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-10 z-0"
+      >
+          <source src="/videos/about-bg.mp4" type="video/mp4" />
+      </video>
+      <div ref={ref} className={inView ? 'relative slide-top max-w-5xl mx-auto' : 'opacity-0 max-w-5xl mx-auto'}>
         <h2 className="text-4xl font-bold mb-12 text-center">Pricing</h2>
 
         <div className="bg-green-800/30  rounded-xl p-6 mb-12 shadow-green-400/30 shadow-lg">

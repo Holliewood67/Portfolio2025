@@ -18,7 +18,6 @@ export const metadata = {
       'en-US': '/en-US',
     },
   },
-  
   openGraph: {
     title: "Ethan Cantrell- Developer",
     description: "Portfolio of Ethan Cantrell — clean code, creative projects, and community-driven events.",

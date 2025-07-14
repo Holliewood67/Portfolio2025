@@ -25,8 +25,17 @@ export default function Projects(){
     threshold: 0.3, // Adjust how much of the section should be visible before triggering
   });
     return(
-        <section id="projects" className="py-12 px-4w-full min-h-screen">
-            <div ref={ref} className={inView ? 'slide-top max-w-6xl mx-auto' : 'max-w-6xl mx-auto opacity-0'}>
+        <section id="projects" className="relative w-full py-12 min-h-screen">
+            <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
+        >
+            <source src="/videos/smoke-bg.mp4" type="video/mp4" />
+        </video>
+            <div ref={ref} className={inView ? 'relative slide-top max-w-6xl mx-auto' : 'max-w-6xl mx-auto opacity-0'}>
                 <h2 className="text-4xl font-bold mb-12 text-center neon-glow">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, id) => (
